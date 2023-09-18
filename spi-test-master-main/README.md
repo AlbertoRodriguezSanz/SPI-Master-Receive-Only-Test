@@ -34,7 +34,7 @@ The communication steps are implemented in `spi_master_example.c` file and calle
   - SDO Active: High Level
 - Transfer Settings
   - Slave Select value: driven to the active state while transmit counter is not zero
-  - Transmit: Enabled
+  - Transmit: Disabled
   - Receive: Enabled
 - Clock Settings
   - Clock Source: High Frequency Internall Oscillator
