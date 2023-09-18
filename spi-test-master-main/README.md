@@ -39,3 +39,5 @@ The communication steps are implemented in `spi_master_example.c` file and calle
 - Clock Settings
   - Clock Source: High Frequency Internall Oscillator
   - Baud Clock: 4MHz
+ 
+The message reception is done through the SPI1_ByteExchange function, even though the master is not meant to send any data out. This function already implements the process for reading the receive buffer when a byte is stored and the interrupt flag sets. As for the transmitted message from the master device, the user can send a 0x00 byte to avoid sending anything if the TXR bit was to be set.
