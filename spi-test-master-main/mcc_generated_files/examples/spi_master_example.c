@@ -49,7 +49,6 @@ This example works like this:
 
 #define _XTAL_FREQ 16000000/4
 
- 
 static uint8_t buffer[4]= "data";
 uint8_t buffer2[4];
 uint8_t rMessage = "0x00";
@@ -68,58 +67,34 @@ uint8_t tMessage = "0xA9";
 static void drive_slave_select_low(void);
 static void drive_slave_select_high(void);
 
-/**
- *  \ingroup doc_driver_spi_example
- *  \brief Put in this function the code needed to drive the slave select low
- *  
- *  \param none
- *  
- *  \return none
- */
 static void drive_slave_select_low(){
 	// Control GPIO to drive SS_bar low
     PORTAbits.RA5 = 0;
 }
 
-/**
- *  \ingroup doc_driver_spi_example
- *  \brief Put in this function the code needed to drive the slave select high
- *  
- *  \param none
- *  
- *  \return none
- */
 static void drive_slave_select_high(){
 	// Control GPIO to drive SS_bar high
     PORTAbits.RA5 = 1;
 }
 
-/**
- *  \ingroup doc_driver_spi_example
- *  \brief Call this function the code needed to run the SPI Master example
- *  
- *  \param none
- *  
- *  \return 1, if the program ended successfully
- */
 uint8_t SPI_Master_test(void)
 {
 	// Test driver, assume that the SPI MISO and MOSI pins have been looped back
 	
 	if(!spi_master_open(MASTER0))
-		// Not able to open SPI, call fail() or optionally do something 
-		// else waiting for the SPI to become free
-		return 0; 
-    
-    
-    drive_slave_select_low();
-    
-    //Example for receiving one byte from the slave 
-    rMessage = SPI1_ExchangeByte(tMessage);                   
+	// Not able to open SPI, call fail() or optionally do something 
+	// else waiting for the SPI to become free
+	return 0; 
 
-    drive_slave_select_high();
     
-    SPI1_Close();
+	drive_slave_select_low();
+	    
+	//Example for receiving one byte from the slave 
+	rMessage = SPI1_ExchangeByte(tMessage);                   
+	
+	drive_slave_select_high();
+	    
+	SPI1_Close();
         
     
 	// If we get here, everything was OK
