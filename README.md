@@ -36,7 +36,7 @@ In the schematic of the breadboard the two connectors represent the PICKIT4 pins
 
 ## SPI module configuration
 
-For this test, the SPI module was implemented through the Foundation Service Libraries (FSL) integrated in the MCC, which offered an example detailing the operation steps for the data transfer. The specifics for each microcontroller are described on the respective README files.
+For this test, the SPI module was programmed through two different abstraction methods: the Foundation Service Libraries (FSL) integrated in MCC for the master device and through "bare metal code" for the slave device. The specifics for each microcontroller are described on the respective README files.
 
 ## Requirements
 
