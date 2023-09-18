@@ -65,5 +65,5 @@ Example of the generated signals in the test:
 
 - Channel 1 (Yellow): Slave Select (SS)
 - Channel 2 (Green): SPI Clock (SCK)
-- Channel 3 (Purple): Slave Serial Data Out (SDO, MISO)
-- Channel 4 (Blue): Slave Serial Data In (SDI, MOSI)
+- Channel 3 (Purple): Slave Serial Data In (SDI, MISO)
+- Channel 4 (Blue): Slave Serial Data Out (SDO, MOSI)
