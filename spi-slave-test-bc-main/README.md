@@ -44,5 +44,5 @@ This device's firmware is programmed through "bare metal coding", which is a low
 - Implemented Functions
   - ExchangeByte  
  
-The message reception is done through the SPI1_ByteExchange function, even though the master is not meant to send any data out. This function already implements the process for reading the receive buffer when a byte is stored and the interrupt flag sets. As for the transmitted message from the master device, the user can send a 0x00 byte to avoid sending anything if the TXR bit was to be set.
+The message reception is done through the ByteExchange function, even though the master is not meant to send any data out. This function already implements the process for reading the receive buffer when a byte is stored and the interrupt flag sets. As for the transmitted message from the master device, the user can send a 0x00 byte to avoid sending anything if the TXR bit was to be set.
 
