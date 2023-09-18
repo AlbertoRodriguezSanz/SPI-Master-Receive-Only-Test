@@ -1,6 +1,3 @@
-
-The SPI module for the slave device is implemented through 
-
 ### SPI Slave Device
 
 This device's firmware is programmed through "bare metal coding", which is a low-level type of programming (C language), without any abstraction or superior software layers, that is hardcoded to the device at a hardware level and optimizes code execution. The same definition and implementation of the functions used in the master device are done for the slave device in the `main.c` file directly, removing two abstraction layers.
