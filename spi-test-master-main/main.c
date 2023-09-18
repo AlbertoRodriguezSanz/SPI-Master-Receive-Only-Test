@@ -63,6 +63,9 @@ void main(void)
     {
 
         SPI_Master_test();
+        LATCbits.LC2 = 1;
+        __delay_ms(10);  //Comment for observing in the oscilloscope, leave it for debugging with the LEDs
+        LATCbits.LC2 = 0;
         
         
     }
