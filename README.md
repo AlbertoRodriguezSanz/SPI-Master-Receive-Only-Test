@@ -7,7 +7,7 @@ A breadboard with two PIC18F26K83 microcontrollers, where the microcontroller la
 ![broadboard_can_bus_top_viewjpg](https://github.com/AlbertoRodriguezSanz/CAN-Bus-Test/assets/95371514/c0f4a20e-199d-4b0a-b0b2-8a69f7578277) 
 
 For this test the PICkit4 in-circuit debugger/programmer will be used to load the firmware into the microcontroller. This needs to be connected to the microcontroller with the following pins.
-- MCLR, needs to be connected through two series pull-up resistors (10kΩ and 100-470Ω) to the power supply.
+- MCLR (needs to be connected through two series pull-up resistors: 10kΩ and 100-470Ω to the power supply)
 - PGD
 - PGC
 - VDD
