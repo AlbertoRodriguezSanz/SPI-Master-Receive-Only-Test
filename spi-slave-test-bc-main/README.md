@@ -24,8 +24,6 @@ This device's firmware is programmed through "bare metal coding", which is a low
 
 ## SPI module configuration
 
-![spi_Master_fsl](https://github.com/AlbertoRodriguezSanz/SPI-Master-Transmit-Only-Test/assets/95371514/3aa8eacd-1583-4173-91d7-bd830cbe2b16)
-
 - SPI Mode 0
   - Bit Count Mode (BMODE): 0
   - Bus: Slave
@@ -43,6 +41,8 @@ This device's firmware is programmed through "bare metal coding", which is a low
 - Clock Settings
   - Clock Source: High Frequency Internall Oscillator
   - Baud Clock: 4MHz
+- Implemented Functions
+  - ExchangeByte  
  
 The message reception is done through the SPI1_ByteExchange function, even though the master is not meant to send any data out. This function already implements the process for reading the receive buffer when a byte is stored and the interrupt flag sets. As for the transmitted message from the master device, the user can send a 0x00 byte to avoid sending anything if the TXR bit was to be set.
 
