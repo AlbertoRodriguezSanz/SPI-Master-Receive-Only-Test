@@ -37,7 +37,7 @@ This device's firmware is programmed through "bare metal coding", which is a low
   - SDI Active: High Level
   - SDO Active: High Level
 - Transfer Settings
-  - Slave Select value: driven to the active state while transmit counter is not zero
+  - SDO transfers: according to the level of Slave Select
   - Transmit: Enabled
   - Receive: Disabled
 - Clock Settings
