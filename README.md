@@ -1,5 +1,5 @@
 # SPI-Master-Receive-Only-Test
-Firmware for the various tests performed with two PIC18F26K83 microcontrollers for the SPI module where the master device begins the communication and then only receives the data being sent by the slave device. Within this firmware there are a couple of test variations for receiving a different number of bytes through different methods, with the objective of observing the generated signals with an oscilloscope.
+Firmware for the various tests performed with two PIC18F26K83 microcontrollers for the SPI module where the master device begins the communication and then only receives the data being sent by the slave device. For this test the slave will only send one byte that the master will identify, lighting a LED to signal a correct reception of the message.
 
 ## Setup
 A breadboard with two PIC18F26K83 microcontrollers, where the microcontroller labelled '1' operates as the master device and the microcontroller labelled '3' operates as the slave device, was used as a test bench.
