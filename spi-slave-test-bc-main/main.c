@@ -160,17 +160,17 @@ static uint8_t SPI1_exchangeByte(uint8_t data)
     return SPI1RXB; 
 }
 
-static void SPI1_RxInterruptHandler(void)
+static void SPI1_TxInterruptHandler(void)
 {
-    //receiveData = SPI1_exchangeByte(writeData);
+    LATCbits.LC2 = 1;	// When a message has been sent the LED is turned on
 }
 
 void __interrupt() INTERRUPT_InterruptManager(void)
 {
    
-        if(PIE2bits.SPI1RXIE == 1 && PIR2bits.SPI1RXIF == 1)
+        if(PIE2bits.SPI1TXIE == 1 && PIR2bits.SPI1TXIF == 1)
     {
-        SPI1_RxInterruptHandler();
+        SPI1_TxInterruptHandler();
     }
 }
 
