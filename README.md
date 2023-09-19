@@ -4,7 +4,7 @@ Firmware for the various tests performed with two PIC18F26K83 microcontrollers f
 ## Setup
 A breadboard with two PIC18F26K83 microcontrollers, where the microcontroller labelled '1' operates as the master device and the microcontroller labelled '3' operates as the slave device, was used as a test bench.
 
-![broadboard_can_bus_top_viewjpg](https://github.com/AlbertoRodriguezSanz/CAN-Bus-Test/assets/95371514/c0f4a20e-199d-4b0a-b0b2-8a69f7578277) 
+![spi_can_combined_breadboard_schematic](https://github.com/AlbertoRodriguezSanz/SPI-Master-Transmit-Only-Test/assets/95371514/68131bdd-db41-4513-8ce9-3f52d5cdf47f)
 
 For this test the PICkit4 in-circuit debugger/programmer will be used to load the firmware into the microcontroller. This needs to be connected to the microcontroller with the following pins.
 - MCLR (needs to be connected through two series pull-up resistors: 10kΩ and 100-470Ω to the power supply)
