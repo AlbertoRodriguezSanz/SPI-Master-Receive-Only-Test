@@ -4,7 +4,7 @@ Firmware for the various tests performed with two PIC18F26K83 microcontrollers f
 ## Setup
 A breadboard with two PIC18F26K83 microcontrollers, where the microcontroller labelled '1' operates as the master device and the microcontroller labelled '3' operates as the slave device, was used as a test bench.
 
-![spi_can_combined_breadboard_schematic](https://github.com/AlbertoRodriguezSanz/SPI-Master-Transmit-Only-Test/assets/95371514/68131bdd-db41-4513-8ce9-3f52d5cdf47f)
+![spi_tests_breadboard](https://github.com/AlbertoRodriguezSanz/SPI-Master-Full-Duplex-Test/assets/95371514/a0d98f81-4d93-49cf-9aa9-18eca84d109d)
 
 For this test the PICkit4 in-circuit debugger/programmer will be used to load the firmware into the microcontroller. This needs to be connected to the microcontroller with the following pins.
 - MCLR (needs to be connected through two series pull-up resistors: 10kΩ and 100-470Ω to the power supply)
